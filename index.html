@@ -5,18 +5,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>TO-DO-LIST</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/17fd2c1d1a.js" crossorigin="anonymous"></script>
+        
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <h1>TO-DO-LIST</h1>
+        <div id="title"><h1>to-do list</h1></div>
+        <div id="containerDiv1">
+            <div id="containerDiv2">
+                <div class="heading">Welcome to your To Do list!</div><hr>
+                <div class="heading">Hit + to add new items</div><hr>
+                <div class="heading">Hit the item itself to delete it</div><hr>
+                <div class="heading">
+                    <input type='text' id='name' name='name' placeholder="Type Text Here">
+                    <span id="btn"><i onclick="addItem()" class="fas fa-plus-circle fa-3x"></i></span>
+                </div>
+                <div>
+                    <ul id="content">
+                        <li>yoga</li>
+                        <li>workout</li>
+                        <li>study</li>
+                        <li>sleep</li>
+                        <li>cricket</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+
+
+
+
+
         
-
-
-
-
-        <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        
         <script src="js/script.js"></script>
     </body>
 </html>
