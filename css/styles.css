@@ -28,18 +28,16 @@ body {
     margin: 0 auto;
     width: 400px;
     margin-top: 40px;
-    background-color:rgba(230, 229, 231, 0.747);
- 
-
+    background-color: #7098bb61;
 }
 #containerDiv2 {
     border-radius: 6px;
     padding: 7px;
     width: 85%;
     background-color: #fff;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow: 3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
-    box-shadow: 3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    -webkit-box-shadow: 3px 3px 5px 6px #7098bb4f;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px #7098bb4f;  /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 5px 6px #7098bb4f;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 .heading {
     font-size: 1.3em;
@@ -52,13 +50,12 @@ body {
 }
 #content li {
     font-size: 1rem;
-    background-color: rgba(245, 245, 245, 0.733);
     padding: 7px;   
     color: rgba(0, 0, 0, 0.507); 
     height: 50px;
 }
 #content li:hover {
-    background-color: rgba(245, 245, 245, 0.226);
+    background-color: rgba(245, 245, 245, 0.966);
 }
 
 #name {
@@ -102,6 +99,15 @@ body {
 }
 .check :hover {
     cursor: pointer;
+}
+.fa-plus:before {
+    color: #7098bb;
+}
+.fa-trash:before {
+    color: #7098bb;
+}
+.theme {
+    background-color: #7098bb;
 }
 
 
