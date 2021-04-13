@@ -5,27 +5,23 @@ function addItem() {
         alert("Please enter some task");
     }
     else {
-        var html = "<li>" + item + "</li>";
+        var html = "<li><input type='checkbox' class='check'>" + item + "<span class='trbtn'><i class='fas fa-trash'></i></span></li>";
         html=document.getElementById("content").innerHTML +html;
         document.getElementById("content").innerHTML=html;
+        document.getElementById("name").value = null;
         remove();
     }
 }
 function remove() {
     function removeItem() {
-        this.remove();
+        this.parentElement.remove();
     }
-    var itemList = document.getElementsByTagName("li");
+    var itemList = document.getElementsByClassName("trbtn");
     for(var i=0; i<itemList.length; ++i) {
         itemList[i].addEventListener("click",removeItem);
     }
 
 }
 remove();
-
-
-//rgb(29 41 136 / 95%) heading h1
-//#29348 button
-//#404A9A shadow
 
 

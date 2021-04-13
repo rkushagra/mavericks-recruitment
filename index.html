@@ -14,30 +14,31 @@
     </head>
     <body>
         <nav class="navbar-nav bg-secondary">
-            <div class="container">
+            <div class="container-fluid">
                 <div id="title" class="navbar-brand">
                     <i class="fas fa-clipboard-list fa-4x"></i>
                     <h1 id="pg-heading">to-do list</h1>
                 </div>
             </div>
         </nav>
-        <div class="container" class="mid">
+        <div class="container-fluid" id="mid">
             <div id="containerDiv1">
                 <div id="containerDiv2">
                     <div class="heading">Welcome to your To Do list!</div><hr>
-                    <div class="heading">Hit + to add new items</div><hr>
-                    <div class="heading">Hit the item itself to delete it</div><hr>
+                    <div class="heading">Hit <i class="fas fa-plus"></i> to add new items</div><hr>
+                    <div class="heading">Hit  <i class="fas fa-trash"></i> to delete that item</div><hr>
                     <div class="heading">
-                        <input type='text' id='name' name='name' placeholder="...Enter New Task Here...">
+                        <input type='text' id='name' name='name' placeholder="Type...">
                         <span id="btn"><i onclick="addItem()" class="fas fa-plus fa-2x"></i></span>
                     </div>
                     <div>
                         <ul id="content">
-                            <li>yoga</li>
-                            <li>workout</li>
-                            <li>study</li>
-                            <li>sleep</li>
-                            <li>cricket</li>
+                            <li><input type="checkbox" class="check">Yoga<span class="trbtn"><i class="fas fa-trash"></i></span></li>
+                            <li><input type="checkbox" class="check">Workout<span class="trbtn"><i class="fas fa-trash"></i></span></li>
+                            <li><input type="checkbox" class="check">Meeting at 1 pm<span class="trbtn"><i class="fas fa-trash"></i></span></li>
+                            <li><input type="checkbox" class="check">Cricket<span class="trbtn"><i class="fas fa-trash"></i></span></li>
+                            <li><input type="checkbox" class="check">Water the plants<span class="trbtn"><i class="fas fa-trash"></i></span></li>
+                            <li><input type="checkbox" class="check">Friend's birthday<span class="trbtn"><i class="fas fa-trash"></i></span></li>
                         </ul>
                     </div> 
                 </div>
@@ -46,7 +47,7 @@
         
 
         <footer class="panel-footer bg-secondary">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="text-center">&copy; Copyright 2021 kushagra</div>
             </div>
         </footer>

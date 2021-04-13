@@ -55,11 +55,12 @@ body {
     background-color: rgba(245, 245, 245, 0.733);
     padding: 7px;   
     color: rgba(0, 0, 0, 0.507); 
+    height: 50px;
 }
 #content li:hover {
     background-color: rgba(245, 245, 245, 0.226);
-    cursor: pointer;
 }
+
 #name {
     padding: 4px;
     margin: 2px;
@@ -88,4 +89,30 @@ body {
     padding-bottom: 20px;
     border-top: 0;
 }
+.trbtn {
+    border: none;
+    background-color: inherit;
+    float: right;
+}
+.trbtn :hover {
+    cursor: pointer;
+}
+.check {
+    margin-right: .6em;
+}
+.check :hover {
+    cursor: pointer;
+}
 
+
+@media only screen and (max-width: 420px) {
+    #containerDiv1 {
+        width: 100%;
+        padding: 0;
+    }
+    #containerDiv2 {
+        width: 85%;
+    }
+
+
+}
